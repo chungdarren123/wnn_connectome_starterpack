@@ -1,0 +1,28 @@
+# Data
+datasets/
+*.parquet
+
+# Environments and Python caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Generated models and outputs
+artifacts/
+outputs/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.zip
+
+# Preserve the small, original baseline model
+!baseline/baseline.onnx
+
+# Local configuration and metadata
+.env
+._*
+.DS_Store
+.ipynb_checkpoints/
