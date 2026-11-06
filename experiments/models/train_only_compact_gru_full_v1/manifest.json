@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "policy": "datasets/train.parquet only; all fit sequences train; development evaluates each epoch; confirmation unread",
+  "seed": 20261102,
+  "source_split_manifest": "experiments/models/train_only_causal_ablation_v1/manifest.json",
+  "source_scaler": {
+    "path": "artifacts/train_only_causal_ablation_v1/mlp_raw.npz",
+    "sha256": "846250578c38258761385847b6aad804e1f8777e4d26cdf6631d6b709285dbf1"
+  },
+  "partitions": {
+    "fit_sequences": 9547,
+    "development_sequences": 530,
+    "confirmation_sequences": 530,
+    "confirmation_evaluated": false
+  },
+  "architecture": {
+    "input_projection": [
+      112,
+      64
+    ],
+    "gru_layers": 1,
+    "gru_hidden_size": 64,
+    "head": "two independent 64 -> 16 -> SiLU -> 1 heads",
+    "trainable_parameters": 34306
+  },
+  "training": {
+    "epochs": 2,
+    "learning_rates": [
+      0.001,
+      0.0003
+    ],
+    "batch_size_sequences": 8,
+    "chunk_length": 1024,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 1.0,
+    "loss": "abs(clipped target)-weighted SmoothL1(beta=0.25)",
+    "warmup_steps_used_for_state_not_loss": 99,
+    "threads": 8,
+    "torch_version": "2.15.0+cpu"
+  }
+}

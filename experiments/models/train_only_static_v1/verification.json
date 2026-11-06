@@ -1,0 +1,26 @@
+{
+  "scope": "first five fixed train-only holdout sequences",
+  "note": "Runtime extrapolation is local-machine guidance, not a grader guarantee.",
+  "models": {
+    "ridge": {
+      "sequences": 5,
+      "rows": 100000,
+      "required_predictions": 99505,
+      "row_at_a_time_seconds": 1.6134625659906305,
+      "microseconds_per_row": 16.134625659906305,
+      "rough_39_4m_row_minutes_on_this_machine": 10.59507085000514,
+      "maximum_stream_vs_batch_abs_difference": 9.5367431640625e-07,
+      "artifact_sha256_verified": true
+    },
+    "mlp": {
+      "sequences": 5,
+      "rows": 100000,
+      "required_predictions": 99505,
+      "row_at_a_time_seconds": 3.3325015570007963,
+      "microseconds_per_row": 33.32501557000796,
+      "rough_39_4m_row_minutes_on_this_machine": 21.883426890971894,
+      "maximum_stream_vs_batch_abs_difference": 1.0132789611816406e-06,
+      "artifact_sha256_verified": true
+    }
+  }
+}

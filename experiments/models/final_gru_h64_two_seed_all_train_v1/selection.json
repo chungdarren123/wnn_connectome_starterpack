@@ -1,0 +1,22 @@
+{
+  "criterion": "frozen three-epoch two-seed recipe",
+  "ensemble_weights": {
+    "seed_20261102": 0.5,
+    "seed_20261105": 0.5
+  },
+  "selected_artifacts": {
+    "seed_20261102": {
+      "path": "artifacts/final_gru_h64_two_seed_all_train_v1/seed_20261102_epoch_3.pt",
+      "sha256": "afb4b83ab480b20cb5e585869d9d0e54a7e1124c760f42e512f34fba013d01b1",
+      "bytes": 430837
+    },
+    "seed_20261105": {
+      "path": "artifacts/final_gru_h64_two_seed_all_train_v1/seed_20261105_epoch_3.pt",
+      "sha256": "cf479da1e087d7aaea12745066c2071383f460de2593714b88985c6ce44f5f22",
+      "bytes": 430837
+    }
+  },
+  "valid_parquet_evaluated": true,
+  "validation_selected_candidate": "ensemble_50_50",
+  "validation_selected_score": 0.6634833710990271
+}

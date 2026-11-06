@@ -12,11 +12,13 @@ __pycache__/
 artifacts/
 outputs/
 logs/
+*.log
 *.pt
 *.pth
 *.ckpt
 *.onnx
 *.zip
+*.joblib
 
 # Preserve the small, original baseline model
 !baseline/baseline.onnx

@@ -1,0 +1,126 @@
+{
+  "evaluation": "all eligible rows of development sequences; confirmation not evaluated",
+  "feature_definitions": {
+    "raw": "current 112 features",
+    "first_difference": "raw plus x[t] - x[t-1]",
+    "exponential_average": "raw plus causal EMAs with half-lives (8, 64)",
+    "repeated_value": "raw plus float32 indicators x[t] == x[t-1]"
+  },
+  "models": {
+    "raw": {
+      "ridge": {
+        "t0": 0.32427762415223965,
+        "t1": 0.32860487814031064,
+        "weighted_pearson": 0.32644125114627515,
+        "rows": 10547530,
+        "batch_inference_seconds": 1.5126704560243525,
+        "delta_vs_raw": 0.0
+      },
+      "mlp": {
+        "t0": 0.35728081834012215,
+        "t1": 0.3524624626658506,
+        "weighted_pearson": 0.35487164050298636,
+        "rows": 10547530,
+        "batch_inference_seconds": 5.175898203000543,
+        "delta_vs_raw": 0.0
+      }
+    },
+    "first_difference": {
+      "ridge": {
+        "t0": 0.33079610779919943,
+        "t1": 0.33622407962847345,
+        "weighted_pearson": 0.33351009371383644,
+        "rows": 10547530,
+        "batch_inference_seconds": 2.9327892262663227,
+        "delta_vs_raw": 0.007068842567561295
+      },
+      "mlp": {
+        "t0": 0.355741783916994,
+        "t1": 0.35644502342919476,
+        "weighted_pearson": 0.3560934036730944,
+        "rows": 10547530,
+        "batch_inference_seconds": 8.12773295234365,
+        "delta_vs_raw": 0.0012217631701080256
+      }
+    },
+    "exponential_average": {
+      "ridge": {
+        "t0": 0.368767865981329,
+        "t1": 0.3730125676619676,
+        "weighted_pearson": 0.3708902168216483,
+        "rows": 10547530,
+        "batch_inference_seconds": 4.717538827899261,
+        "delta_vs_raw": 0.04444896567537315
+      },
+      "mlp": {
+        "t0": 0.38079606324580706,
+        "t1": 0.3794060212056557,
+        "weighted_pearson": 0.3801010422257314,
+        "rows": 10547530,
+        "batch_inference_seconds": 13.486637844835059,
+        "delta_vs_raw": 0.025229401722745015
+      }
+    },
+    "repeated_value": {
+      "ridge": {
+        "t0": 0.3272844631248821,
+        "t1": 0.33060692460048985,
+        "weighted_pearson": 0.32894569386268596,
+        "rows": 10547530,
+        "batch_inference_seconds": 3.239167936233571,
+        "delta_vs_raw": 0.002504442716410815
+      },
+      "mlp": {
+        "t0": 0.35432526572694756,
+        "t1": 0.3528517477457937,
+        "weighted_pearson": 0.35358850673637066,
+        "rows": 10547530,
+        "batch_inference_seconds": 8.892295811980148,
+        "delta_vs_raw": -0.0012831337666157072
+      }
+    }
+  },
+  "artifacts": {
+    "raw": {
+      "ridge": {
+        "path": "artifacts/train_only_causal_ablation_v1/ridge_raw.npz",
+        "sha256": "418b64402191feab204147d969cdc282b74a0b235701545ed960a49b40cce314"
+      },
+      "mlp": {
+        "path": "artifacts/train_only_causal_ablation_v1/mlp_raw.npz",
+        "sha256": "846250578c38258761385847b6aad804e1f8777e4d26cdf6631d6b709285dbf1"
+      }
+    },
+    "first_difference": {
+      "ridge": {
+        "path": "artifacts/train_only_causal_ablation_v1/ridge_first_difference.npz",
+        "sha256": "c0fe1baa7c787391b9b05fd16581d72682959d7afe48262e7022ea0322ff8f56"
+      },
+      "mlp": {
+        "path": "artifacts/train_only_causal_ablation_v1/mlp_first_difference.npz",
+        "sha256": "a0cc25ce1900795e6cf512c7344f08d50a6ae264e17957a389e391b11384b3d5"
+      }
+    },
+    "exponential_average": {
+      "ridge": {
+        "path": "artifacts/train_only_causal_ablation_v1/ridge_exponential_average.npz",
+        "sha256": "d442202f123b5ae7c775e541be6fed4c3ab7e5e670078a41c676a1574e83bfc4"
+      },
+      "mlp": {
+        "path": "artifacts/train_only_causal_ablation_v1/mlp_exponential_average.npz",
+        "sha256": "eb805e2f5f5e4e4e5540b69b999b9f93924f05c9aa060c6e334aba252b8b5e07"
+      }
+    },
+    "repeated_value": {
+      "ridge": {
+        "path": "artifacts/train_only_causal_ablation_v1/ridge_repeated_value.npz",
+        "sha256": "a8fbc2370c7a6923a11ced92786fd676661f6bfbdc23e06d0d1db9ef25941b92"
+      },
+      "mlp": {
+        "path": "artifacts/train_only_causal_ablation_v1/mlp_repeated_value.npz",
+        "sha256": "8f5e51be362f69f2ef18b5c88bc583f10a25131542668a91366e76d97dd87eb6"
+      }
+    }
+  },
+  "elapsed_seconds": 1929.9742212990095
+}

@@ -1,0 +1,24 @@
+{
+  "role": "submission-ready benchmark; development-selected; confirmation and provided validation not evaluated",
+  "development_weighted_pearson": 0.39233596541678606,
+  "checkpoint": {
+    "path": "artifacts/train_only_compact_gru_full_v1/compact_gru_target_specific_epoch_3.pt",
+    "sha256": "0c173e750ba1b808264f51d5cfbac4a46e62ad7c7a83ff310268e9c67b878310"
+  },
+  "onnx": {
+    "path": "artifacts/train_only_compact_gru_full_v1/compact_gru_target_specific_epoch_3.onnx",
+    "sha256": "7b2efe5124b80a6645daf86f54c639909465c23d52d6cd671366d3f724e4dd1c",
+    "bytes": 141226
+  },
+  "submission": {
+    "path": "artifacts/submissions/train_only_compact_gru_full_v1/compact_gru_h64_epoch_3_benchmark.zip",
+    "sha256": "85503f298a36371d379e527ed878096849db583521982618caa2ad0b7518e952",
+    "bytes": 130425
+  },
+  "verification": {
+    "max_prediction_error": 4.708766937255859e-06,
+    "max_hidden_error": 3.933906555175781e-06,
+    "warmup_rows": 99,
+    "verified_prediction_rows": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "weighted_ridge": {
+    "path": "artifacts/submissions/train_only_static_v1/weighted_ridge.zip",
+    "bytes": 3169,
+    "sha256": "d0e6844f6a4eff0e60c82941670b27b222230f2dab31bb944af76f2afea85c0d",
+    "contents": [
+      "solution.py",
+      "model.npz"
+    ]
+  },
+  "small_mlp": {
+    "path": "artifacts/submissions/train_only_static_v1/small_mlp.zip",
+    "bytes": 34127,
+    "sha256": "d9dd9c169c72512f235c72f04af5f2dec3b74868363b2bcb3e0ebdc4061e2d1a",
+    "contents": [
+      "solution.py",
+      "model.npz"
+    ]
+  }
+}

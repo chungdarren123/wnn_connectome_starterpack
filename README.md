@@ -56,6 +56,31 @@ The baseline contains only inference code and an ONNX model. A ready-to-upload
 archive is provided as `baseline/baseline_submission.zip`; no training code or
 training checkpoint is included.
 
+## Experiment history and current model
+
+This repository includes the complete local experiment trail used to develop
+the first submission. The current candidate is an equal-weight ensemble of two
+34,306-parameter, 64-state GRUs with target-specific nonlinear heads. Each
+model was retrained for three epochs on all 10,607 training sequences.
+
+The final ensemble scored **0.663483 WP** on the supplied validation mask,
+compared with 0.660729 and 0.660585 for its two individual seeds. These are
+local validation results, not official hidden-test scores.
+
+- [Model registry](experiments/MODEL_REGISTRY.md): every trained model,
+  comparable internal benchmark and artifact record.
+- [Decision log](experiments/DECISIONS.md): chronological choices, rejected
+  branches and data-use policy.
+- `experiments/models/`: canonical manifests, metrics, selections, hashes and
+  export records.
+- `scripts/`: training, evaluation, ONNX export and package-verification code.
+- `solutions/`: source versions of submission callbacks.
+
+Datasets, checkpoints, ONNX files and ZIP packages are intentionally excluded
+from Git. Their paths, sizes and SHA-256 hashes remain in the experiment JSON
+records so local artifacts can be verified without storing large binaries in
+the repository.
+
 ## Submission
 
 Provide `solution.py` with `PredictionModel()` and `predict(data_point)`.

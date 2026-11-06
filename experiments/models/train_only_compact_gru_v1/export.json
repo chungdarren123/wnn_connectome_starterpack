@@ -1,0 +1,22 @@
+{
+  "checkpoint": {
+    "path": "artifacts/train_only_compact_gru_v1/compact_gru_target_specific.pt",
+    "sha256": "ecfd7dfec68f844177b2570e68b49f10fc3b52b9a76fc189babffda648a79bd7"
+  },
+  "onnx": {
+    "path": "artifacts/train_only_compact_gru_v1/compact_gru_target_specific.onnx",
+    "sha256": "cdb4dbfb434c02930a4fa9170404842342e34cdf7a9fc4e869b69b97888c5237",
+    "bytes": 141226
+  },
+  "submission": {
+    "path": "artifacts/submissions/train_only_compact_gru_v1/compact_gru_target_specific.zip",
+    "sha256": "13b0c8a0f7778a53f71ab06d120ed6fdf90529e2aadb38cc2d75f1b948f0f5de",
+    "bytes": 130378
+  },
+  "verification": {
+    "max_prediction_error": 7.152557373046875e-07,
+    "max_hidden_error": 2.9802322387695312e-06,
+    "warmup_rows": 99,
+    "verified_prediction_rows": 2
+  }
+}

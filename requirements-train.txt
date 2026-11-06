@@ -1,0 +1,7 @@
+-r requirements.txt
+scikit-learn==1.9.1
+scipy==1.18.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+onnx==1.23.2
+onnxscript==0.7.2

@@ -1,0 +1,30 @@
+{
+  "evaluation": "all 19,901 eligible rows in each train-only holdout sequence; no scoring mask",
+  "ridge": {
+    "t0": 0.3253713485888375,
+    "t1": 0.3251450228132182,
+    "weighted_pearson": 0.3252581857010278,
+    "rows": 2547328,
+    "batch_inference_seconds": 0.5012400019622874,
+    "artifact_bytes": 2602
+  },
+  "mlp": {
+    "t0": 0.3539132516826347,
+    "t1": 0.3626697676298963,
+    "weighted_pearson": 0.3582915096562655,
+    "rows": 2547328,
+    "batch_inference_seconds": 1.323265246959636,
+    "artifact_bytes": 34593
+  },
+  "artifacts": {
+    "ridge": {
+      "path": "artifacts/train_only_static_v1/weighted_ridge.npz",
+      "sha256": "155a766987705218b99f846c4750fb835d27cc23d06824726c14562c07d73c98"
+    },
+    "mlp": {
+      "path": "artifacts/train_only_static_v1/small_mlp.npz",
+      "sha256": "16725de54017cc08ad720a6571bdd02a3f34d283b0b9e2f667e21c5f4d7a8c7f"
+    }
+  },
+  "elapsed_seconds": 913.0355874730012
+}

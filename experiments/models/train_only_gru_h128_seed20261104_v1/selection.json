@@ -1,0 +1,11 @@
+{
+  "criterion": "highest development weighted Pearson",
+  "selected_epoch": 2,
+  "selected_score": 0.38733869495843387,
+  "selected_artifact": {
+    "path": "artifacts/train_only_gru_h128_seed20261104_v1/gru_h128_epoch_2.pt",
+    "sha256": "971a89a7d7b645488d3f2cfa00089832139343d94b91817a1cf1ebef5f4d2b4b",
+    "bytes": 1431157
+  },
+  "confirmation_evaluated": false
+}

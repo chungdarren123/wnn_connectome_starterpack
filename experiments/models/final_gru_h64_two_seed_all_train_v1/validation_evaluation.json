@@ -1,0 +1,27 @@
+{
+  "policy": "single final evaluation on need_prediction AND is_scored rows; no tuning",
+  "sequences": 1873,
+  "results": {
+    "seed_20261102": {
+      "t0": 0.6575116382399988,
+      "t1": 0.6639466586242373,
+      "weighted_pearson": 0.660729148432118,
+      "rows": 3528273
+    },
+    "seed_20261105": {
+      "t0": 0.6565637641957801,
+      "t1": 0.6646052728298945,
+      "weighted_pearson": 0.6605845185128373,
+      "rows": 3528273
+    },
+    "ensemble_50_50": {
+      "t0": 0.6598054281588298,
+      "t1": 0.6671613140392244,
+      "weighted_pearson": 0.6634833710990271,
+      "rows": 3528273
+    }
+  },
+  "selected_candidate": "ensemble_50_50",
+  "selected_score": 0.6634833710990271,
+  "elapsed_seconds": 474.85706799599575
+}

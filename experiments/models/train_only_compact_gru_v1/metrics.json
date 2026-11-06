@@ -1,0 +1,40 @@
+{
+  "evaluation": "all eligible development rows; confirmation not evaluated",
+  "training_losses": [
+    {
+      "shared": 0.8310993043996859,
+      "target_specific": 0.8283782963408157
+    }
+  ],
+  "models": {
+    "shared": {
+      "t0": 0.342904450092353,
+      "t1": 0.3485191268755078,
+      "weighted_pearson": 0.34571178848393036,
+      "rows": 10547530,
+      "batched_model_seconds": 55.26965691406804
+    },
+    "target_specific": {
+      "t0": 0.34705019257468245,
+      "t1": 0.3536972031969174,
+      "weighted_pearson": 0.3503736978857999,
+      "rows": 10547530,
+      "batched_model_seconds": 53.780887129105395
+    }
+  },
+  "artifacts": {
+    "shared": {
+      "path": "artifacts/train_only_compact_gru_v1/compact_gru_shared.pt",
+      "sha256": "5dab49f996e6a81ba19c8c7a8e54fcf1c1a94352cade2daea710287f50cc2c0f",
+      "bytes": 143365,
+      "trainable_parameters": 34338
+    },
+    "target_specific": {
+      "path": "artifacts/train_only_compact_gru_v1/compact_gru_target_specific.pt",
+      "sha256": "ecfd7dfec68f844177b2570e68b49f10fc3b52b9a76fc189babffda648a79bd7",
+      "bytes": 144683,
+      "trainable_parameters": 34306
+    }
+  },
+  "elapsed_seconds": 2781.9315292679967
+}

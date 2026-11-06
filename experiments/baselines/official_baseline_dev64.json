@@ -1,0 +1,16 @@
+{
+  "model": "official supplied baseline",
+  "subset": "development",
+  "manifest": "experiments/splits/validation_v1.json",
+  "manifest_sha256": "48640e700432c2d8d9d7e9bf1915d0ec425ab443d4c9d9f2928178998263a893",
+  "model_sha256": "321ec67b93f3c5dde2c0901ca4532072dad5f65753c2e6519e93ea3555f6a6fd",
+  "solution_sha256": "d0ef0732fd98cc0a74dc298f5667385c690aab17d73742e6f75f474e808fef2e",
+  "t0": 0.6296240076119122,
+  "t1": 0.5971863450158675,
+  "weighted_pearson": 0.6134051763138899,
+  "selected_rows": 118431,
+  "rows_seen": 1280000,
+  "sequences": 64,
+  "elapsed_seconds": 75.47423324099509,
+  "timing_note": "Wall time on this machine while subset creation/verification was also running; not a clean inference benchmark or test-runtime guarantee."
+}

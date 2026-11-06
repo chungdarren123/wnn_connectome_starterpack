@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "role": "final refit after architecture and equal-weight ensemble were frozen",
+  "data_policy": "all 10,607 sequences in train.parquet; valid.parquet unread",
+  "source_scaler": {
+    "path": "artifacts/train_only_causal_ablation_v1/mlp_raw.npz",
+    "sha256": "846250578c38258761385847b6aad804e1f8777e4d26cdf6631d6b709285dbf1"
+  },
+  "seeds": {
+    "seed_20261102": 20261102,
+    "seed_20261105": 20261105
+  },
+  "architecture": {
+    "input_size": 112,
+    "hidden_size": 64,
+    "gru_layers": 1,
+    "head": "two independent 64 -> 16 -> SiLU -> 1",
+    "parameters_per_model": 34306,
+    "ensemble": "fixed arithmetic mean of the two model predictions"
+  },
+  "training": {
+    "sequences_per_epoch": 10607,
+    "epochs": 3,
+    "learning_rates": [
+      0.001,
+      0.0003,
+      0.0001
+    ],
+    "batch_size": 8,
+    "chunk_length": 1024,
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "loss": "abs(clipped target)-weighted SmoothL1(beta=0.25)",
+    "gradient_clip_norm": 1.0,
+    "warmup_steps_used_for_state_not_loss": 99,
+    "threads": 8
+  }
+}

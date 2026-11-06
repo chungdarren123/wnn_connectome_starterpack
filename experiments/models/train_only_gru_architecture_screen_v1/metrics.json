@@ -1,0 +1,53 @@
+{
+  "evaluation": "all eligible development rows; confirmation not evaluated",
+  "training_losses": {
+    "raw_h64": 0.8285672214115039,
+    "ema_h64": 0.8298512072011363,
+    "raw_h128": 0.8257638225681149
+  },
+  "models": {
+    "raw_h64": {
+      "t0": 0.34787703252669955,
+      "t1": 0.3522803338985585,
+      "weighted_pearson": 0.350078683212629,
+      "rows": 10547530,
+      "batched_model_seconds": 98.36919164730352
+    },
+    "ema_h64": {
+      "t0": 0.3310480915133572,
+      "t1": 0.33310288262864984,
+      "weighted_pearson": 0.33207548707100354,
+      "rows": 10547530,
+      "batched_model_seconds": 98.60551503635361
+    },
+    "raw_h128": {
+      "t0": 0.35862350190265524,
+      "t1": 0.3581924386630872,
+      "weighted_pearson": 0.3584079702828712,
+      "rows": 10547530,
+      "batched_model_seconds": 136.09770084026968
+    }
+  },
+  "winner": "raw_h128",
+  "artifacts": {
+    "raw_h64": {
+      "path": "artifacts/train_only_gru_architecture_screen_v1/raw_h64.pt",
+      "sha256": "22a6bdae21cd6666469f13d5edfbe2e4548f6df4cdf559d11b32fd6de453d4f9",
+      "bytes": 429237,
+      "parameters": 34306
+    },
+    "ema_h64": {
+      "path": "artifacts/train_only_gru_architecture_screen_v1/ema_h64.pt",
+      "sha256": "a39b1d60338d467dad36107dbdbf45f01ab64d4a21673b4ee28eee4113cee107",
+      "bytes": 603061,
+      "parameters": 48642
+    },
+    "raw_h128": {
+      "path": "artifacts/train_only_gru_architecture_screen_v1/raw_h128.pt",
+      "sha256": "f55c332b1f8ecf5a0827df9ac145c101e5e4388d63435057ccfd62134812e6c2",
+      "bytes": 1430581,
+      "parameters": 117698
+    }
+  },
+  "elapsed_seconds": 6825.187536209996
+}
